@@ -35,8 +35,13 @@ return new class extends Migration
             $table->longText('payload');
             $table->integer('last_activity')->index();
         });
-    }
-
+    
+        /* User::create([
+            'name'=>'Teszt Alma',
+            'email' => 'teszt@gmail.com',
+            'password' => 'asd'
+        ]); */
+    }    
     /**
      * Reverse the migrations.
      */

@@ -20,6 +20,7 @@ return new class extends Migration
             $table->boolean('status')->default(0);
             //itt így fogják hívni a mezőt, ott hogy hívják, melyik táblával...
             $table->foreignId('user_id')->references('id')->on('users');
+            $table->foreignId('project_id')->references('id')->on('projects');
             $table->timestamps();
         });
     }
